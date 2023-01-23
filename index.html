@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header class="logo">
+        <img src="img/logo.png" alt="Logo de Alura" class="logo-img">
+    </header>
+    <main class="container-sections">
+        <section class="container-encriptar">
+            <textarea name="textarea_uno" id="texto_encriptar" cols="30" rows="10" placeholder="Ingresa tu texto aquí."></textarea>
+            <div class="advertencia">
+                <img src="img/advertencia.png" alt="simbolo de advertencia" class="icono_advertencia">
+                <p>Solo letras minúsculas  y sin acentos</p>
+            </div>
+            <div class="buttons">
+                <button id="btn_encriptar">Encriptar</button>
+                <button id="btn_desencriptar" class="btn_estilo_dos">Desencriptar</button>
+            </div>
+        </section>
+        <section class="container-desencriptar">
+            <div id="layout_desencriptar">
+                <textarea name="textarea_dos" id="texto_desencriptado"  class="textoDos" cols="30" rows="10" readonly></textarea>
+                <div id="desaparacer">
+                    <img src="img/Muñeco.png" alt="niño con una lupa" class="img_muñeco">
+                    <h2 class="titulo_des">Ningún Mensaje fue encontrado</h2>
+                    <p class="parrafo_des">Ingrese el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <button id="copy" class="btn_estilo_dos">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h2>Elaborado por Edward Rolando Ojeda España. 2022</h2>
+    </footer>
+
+    <!-- JavaScript-->
+    <script src="app.js"></script>
+</body>
+</html>
