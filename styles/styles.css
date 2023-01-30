@@ -161,7 +161,7 @@ img{
     }
     #texto_encriptar{
         width: auto;
-        margin-left: 3.4rem;
+        margin: 0 auto;
     }
     .img_muñeco {
         display: none;
