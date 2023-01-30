@@ -149,19 +149,17 @@ img{
     .container-sections, .container-encriptar, .container-desencriptar {
         width: auto;
         margin: 0 auto;
-    }
-    .container-sections{
         display: flex;
         flex-direction: column;
     }
     .container-desencriptar{
-        margin-top: 10rem;
+        margin-top: 5rem;
         height: 40rem;
         position: relative;
     }
     #texto_encriptar{
         width: auto;
-        margin: 0 auto;
+        margin: 0 2.5rem;
     }
     .img_muñeco {
         display: none;
