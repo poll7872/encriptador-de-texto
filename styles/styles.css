@@ -69,8 +69,6 @@ img{
     gap: 2.4rem;
 }
 
-
-
 #btn_encriptar {
     width: 32.8rem;
     height: 6rem;
@@ -99,11 +97,12 @@ img{
 .container-desencriptar{
     max-width: 100%;
     width: 40rem;
-    height: 65rem;
+    height: 63rem;
     border-radius: 3.2rem;
     box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     background-color: var(--white);
     margin-top: -10rem;
+    margin-right: 2rem;
 }
 #layout_desencriptar{
     display: flex;
@@ -130,12 +129,14 @@ img{
     color: var(--Darkblue);
 }
 .parrafo_des{
+    width: 20rem;
+    margin: 0 auto;
     font-size: 1.2rem;
     color: var(--gray_oscuro);
 }
 #copy {
-    position: relative;
-    top: -14rem;
+    position: absolute;
+    top: 55rem;
 }
 
 
@@ -167,6 +168,9 @@ img{
     .textoDos{
         padding: 2rem;
     }
+    .parrafo_des {
+        font-size: 1.4rem;
+    }
     #desaparacer{
         width: 22rem;
     }
@@ -178,11 +182,9 @@ img{
 }
 
 @media (min-width:481px) and (max-width:768px) {
-    .container-sections, .container-desencriptar{
+    .container-sections, .container-desencriptar, .container-encriptar{
         width: auto;
         margin: 0 auto;
-    }
-    .container-sections{
         display: flex;
         flex-direction: column;
     }
@@ -191,20 +193,28 @@ img{
         margin: 0;
     }
     #texto_encriptar{
-        margin-left: 2rem;
+        width: auto;
+        margin: 0 2.5rem;
     }
     .container-desencriptar{
         margin-top: 12rem;
         height: 35rem;
         width: 50rem;
+        position: relative;
     }
     .img_muñeco{
         display: none;
     }
     #desaparacer{
+        margin-top: 4rem;
         padding: auto;
     }
+    .parrafo_des{
+        font-size: 1.5rem;
+    }
     #copy{
+        position: absolute;
+        top: 28.2rem;
         width: 20rem;
     }
 }
